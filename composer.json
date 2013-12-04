@@ -23,9 +23,9 @@
         "sonata-project/doctrine-orm-admin-bundle": ">=2.2.1"
     },
     "autoload": {
-        "psr-0": { "Weare\\FormBuilderBundle": "src" }
+        "psr-0": { "Weare\\WeareFormBuilderBundle": "" }
     },
-    "target-dir": "Weare/FormBuilderBundle",
+    "target-dir": "Weare/WeareFormBuilderBundle",
     "extra": {
         "branch-alias": {
             "dev-master": "1.0.0-dev"
