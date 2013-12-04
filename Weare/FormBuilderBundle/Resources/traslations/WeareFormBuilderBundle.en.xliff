@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="" >
+        <body>
+           
+            <trans-unit id="list.label_name ">
+                <source>list.label_name </source>
+                <target>Name</target>
+            </trans-unit>
+             <trans-unit id="breadcrumb.link_form_builder_list">
+                <source>breadcrumb.link_form_builder_list</source>
+                <target>Forms</target>    
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,35 @@
+parameters:
+   weare.formbuilder.class: Weare\FormBuilderBundle\Admin\FormBuilderAdmin
+   weare.formbuilder.controller: WeareFormBuilderBundle:FormBuilderAdmin
+   weare.formbuilderfield.class: Weare\FormBuilderBundle\Admin\FormBuilderFieldAdmin
+   weare.formbuilderfield.controller: WeareFormBuilderBundle:FormBuilderFieldAdmin
+   weare.formbuilder.block.class: Weare\FormBuilderBundle\Block\Service\FormBuilderBlockService
+   weare.formbuilder.manager.formbuilder.class: Weare\FormBuilderBundle\Entity\FormBuilderManager
+   weare.formbuilder.formbuilder.class: Weare\FormBuilderBundle\Entity\FormBuilder
+   
+
+services:
+  weare.formbuilder.admin.formbuilder:
+        class: %weare.formbuilder.class%
+        arguments: [null, Weare\FormBuilderBundle\Entity\FormBuilder, %weare.formbuilder.controller%]
+        calls:
+            - [setTranslationDomain, ["WeareFormBuilderBundle"]]
+        tags:
+            - { name: sonata.admin, manager_type: orm, icon: happy,group: Forms, label: "Form", label_translator_strategy: sonata.admin.label.strategy.underscore}
+  weare.formbuilder.manager.formbuilder:
+        class: %weare.formbuilder.manager.formbuilder.class%
+        arguments: ["@doctrine.orm.default_entity_manager",%weare.formbuilder.formbuilder.class%]
+  
+  weare.formbuilder.admin.formbuilderfield:
+        class: %weare.formbuilderfield.class%
+        arguments: [null, Weare\FormBuilderBundle\Entity\FormBuilderField, %weare.formbuilderfield.controller%]
+        calls:
+            - [setTranslationDomain, ["WeareFormBuilderBundle"]]
+        tags:
+            - { name: sonata.admin, manager_type: orm, icon: happy,group: Forms, label: "Field", label_translator_strategy: sonata.admin.label.strategy.underscore}
+  weare.block.service.formbuilder:
+        class: %weare.formbuilder.block.class%
+        arguments: [weare.block.service.formbuilder, "@templating","@service_container","@weare.formbuilder.manager.formbuilder"]
+        tags:
+            - { name: sonata.block }
+        
