@@ -14,27 +14,29 @@ Features
 ## Step 1: Download WeareFormBuilder using composer
 
 Add WeareFormBuilder in your composer.json:
+-----------
 
-{
-    "require": {
-        "weare/form-builder": "1.0.x-dev"
-    }
-}
+            {
+                "require": {
+                    "weare/form-builder": "1.0.0-beta"
+                }
+            }
 
 ## Step 2: Enable the bundle
 
 Enable the bundle in the kernel:
+-----------
 
-<?php
-// app/AppKernel.php
+        <?php
+        // app/AppKernel.php
 
-public function registerBundles()
-{
-    $bundles = array(
-        // ...
-        new Weare\FormBuilderBundle\FormBuilderBundle(),
-    );
-}
+        public function registerBundles()
+        {
+            $bundles = array(
+                // ...
+                new Weare\FormBuilderBundle\FormBuilderBundle(),
+            );
+        }
 
 ## Step 3: Update your database schema
 
