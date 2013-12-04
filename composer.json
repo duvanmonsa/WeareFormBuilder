@@ -1,0 +1,34 @@
+{
+    "name": "weare/form-builder",
+    "type": "symfony-bundle",
+    "description": "Symfony WeareFormBuilderBundle",
+    "keywords": ["form", "sonata", "block", "builder", "dinamic", "fields", "cms"],
+    "homepage": "https://github.com/duvanmonsa/formbuilder",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Duvan Monsalve",
+            "email": "duvanmonsa@gmail.com",
+            "homepage": "https://github.com/duvanmonsa/formbuilder"
+        }
+    ],
+    "require": {
+        "symfony/symfony": "~2.2",
+        "sonata-project/admin-bundle": "~2.2.7",
+    },
+    "require-dev": {
+        "sonata-project/doctrine-orm-admin-bundle": ">=2.2.1",
+    },
+    "suggest": {
+        "sonata-project/doctrine-orm-admin-bundle": ">=2.2.1",
+    },
+    "autoload": {
+        "psr-0": { "Sonata\\MediaBundle": "" }
+    },
+    "target-dir": "Weare/FormBuilderBundle",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
