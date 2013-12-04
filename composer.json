@@ -23,7 +23,7 @@
         "sonata-project/doctrine-orm-admin-bundle": ">=2.2.1"
     },
     "autoload": {
-        "psr-0": { "Sonata\\MediaBundle": "" }
+        "psr-0": { "Weare\\FormBuilderBundle": "src" }
     },
     "target-dir": "Weare/FormBuilderBundle",
     "extra": {
