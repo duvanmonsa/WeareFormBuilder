@@ -20,7 +20,7 @@ Add WeareFormBuilder in your composer.json:
 
             {
                 "require": {
-                    "weare/form-builder": "1.0.0-beta"
+                    "weare/form-builder": "dev-master"
                 }
             }
 
