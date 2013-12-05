@@ -1,13 +1,14 @@
 # WeareFormBuilderBundle
 
+[![Build Status](https://travis-ci.org/duvanmonsa/formbuilder.png)](https://travis-ci.org/duvanmonsa/FormBuilder)
 WeareFormBuilderBundle has the logic to create and store dinamic forms in database.
 this Bundle is no ready yet but is funtional, i will work on traslations.
 Features
 ------------
 
-1.  manage forms with its customs fields
-2. use SonataAdminBundle so it has implemente admins
-3. there is a block implemente to use with Cms
+1. Manage forms with its personalized fields
+2. Use SonataAdminBundle so it has implemente admins
+3. There is a block implemente to use with Cms
 
 # Install
 
@@ -34,7 +35,7 @@ Enable the bundle in the kernel:
         {
             $bundles = array(
                 // ...
-                new Weare\FormBuilderBundle\FormBuilderBundle(),
+                new Weare\FormBuilderBundle\WeareFormBuilderBundle(),
             );
         }
 
@@ -42,8 +43,8 @@ Enable the bundle in the kernel:
 
 Now that the bundle is configured, the last thing you need to do is update your database schema because you have added the new entities, 
 Run the following command.
-
-$ php app/console doctrine:schema:update --force
+-----------
+        $ php app/console doctrine:schema:update --force
 
 # Next Steps
 
