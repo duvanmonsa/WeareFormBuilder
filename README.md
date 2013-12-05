@@ -1,6 +1,6 @@
 # WeareFormBuilderBundle
 
-[![Build Status](https://travis-ci.org/duvanmonsa/weareformbuilder.png)](https://travis-ci.org/duvanmonsa/WeareFormBuilder)
+[![Build Status](https://travis-ci.org/duvanmonsa/WeareFormBuilder.png)](https://travis-ci.org/duvanmonsa/WeareFormBuilder)
 
 WeareFormBuilderBundle has the logic to create and store dinamic forms in database.
 this Bundle is no ready yet but is funtional, i will work on traslations.
